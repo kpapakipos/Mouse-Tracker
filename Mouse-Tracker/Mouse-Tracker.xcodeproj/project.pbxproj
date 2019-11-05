@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BDB83672368E0B4002DE1C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB83662368E0B4002DE1C4 /* AppDelegate.swift */; };
-		0BDB83692368E0B4002DE1C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB83682368E0B4002DE1C4 /* SceneDelegate.swift */; };
-		0BDB836B2368E0B4002DE1C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB836A2368E0B4002DE1C4 /* ContentView.swift */; };
-		0BDB836D2368E0B8002DE1C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB836C2368E0B8002DE1C4 /* Assets.xcassets */; };
-		0BDB83702368E0B8002DE1C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB836F2368E0B8002DE1C4 /* Preview Assets.xcassets */; };
-		0BDB83732368E0B8002DE1C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB83712368E0B8002DE1C4 /* LaunchScreen.storyboard */; };
-		0BDB837E2368E0B8002DE1C4 /* Mouse_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB837D2368E0B8002DE1C4 /* Mouse_TrackerTests.swift */; };
-		0BDB83892368E0B8002DE1C4 /* Mouse_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB83882368E0B8002DE1C4 /* Mouse_TrackerUITests.swift */; };
+		0B579CA823721E8C000F9FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CA723721E8C000F9FED /* AppDelegate.swift */; };
+		0B579CAA23721E8C000F9FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CA923721E8C000F9FED /* SceneDelegate.swift */; };
+		0B579CAC23721E8C000F9FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CAB23721E8C000F9FED /* ViewController.swift */; };
+		0B579CAF23721E8C000F9FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B579CAD23721E8C000F9FED /* Main.storyboard */; };
+		0B579CB123721E8D000F9FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B579CB023721E8D000F9FED /* Assets.xcassets */; };
+		0B579CB423721E8D000F9FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B579CB223721E8D000F9FED /* LaunchScreen.storyboard */; };
+		0B579CBF23721E8D000F9FED /* Mouse_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CBE23721E8D000F9FED /* Mouse_TrackerTests.swift */; };
+		0B579CCA23721E8D000F9FED /* Mouse_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CC923721E8D000F9FED /* Mouse_TrackerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0BDB837A2368E0B8002DE1C4 /* PBXContainerItemProxy */ = {
+		0B579CBB23721E8D000F9FED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0BDB835B2368E0B4002DE1C4 /* Project object */;
+			containerPortal = 0B579C9C23721E8C000F9FED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0BDB83622368E0B4002DE1C4;
-			remoteInfo = "Mouse Tracker";
+			remoteGlobalIDString = 0B579CA323721E8C000F9FED;
+			remoteInfo = "Mouse-Tracker";
 		};
-		0BDB83852368E0B8002DE1C4 /* PBXContainerItemProxy */ = {
+		0B579CC623721E8D000F9FED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0BDB835B2368E0B4002DE1C4 /* Project object */;
+			containerPortal = 0B579C9C23721E8C000F9FED /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0BDB83622368E0B4002DE1C4;
-			remoteInfo = "Mouse Tracker";
+			remoteGlobalIDString = 0B579CA323721E8C000F9FED;
+			remoteInfo = "Mouse-Tracker";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BDB83632368E0B4002DE1C4 /* Mouse Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mouse Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BDB83662368E0B4002DE1C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0BDB83682368E0B4002DE1C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BDB836A2368E0B4002DE1C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0BDB836C2368E0B8002DE1C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0BDB836F2368E0B8002DE1C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0BDB83722368E0B8002DE1C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0BDB83742368E0B8002DE1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BDB83792368E0B8002DE1C4 /* Mouse TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mouse TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BDB837D2368E0B8002DE1C4 /* Mouse_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse_TrackerTests.swift; sourceTree = "<group>"; };
-		0BDB837F2368E0B8002DE1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0BDB83842368E0B8002DE1C4 /* Mouse TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mouse TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0BDB83882368E0B8002DE1C4 /* Mouse_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse_TrackerUITests.swift; sourceTree = "<group>"; };
-		0BDB838A2368E0B8002DE1C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B579CA423721E8C000F9FED /* Mouse-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mouse-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B579CA723721E8C000F9FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B579CA923721E8C000F9FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0B579CAB23721E8C000F9FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B579CAE23721E8C000F9FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B579CB023721E8D000F9FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B579CB323721E8D000F9FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B579CB523721E8D000F9FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B579CBA23721E8D000F9FED /* Mouse-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mouse-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B579CBE23721E8D000F9FED /* Mouse_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse_TrackerTests.swift; sourceTree = "<group>"; };
+		0B579CC023721E8D000F9FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B579CC523721E8D000F9FED /* Mouse-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mouse-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B579CC923721E8D000F9FED /* Mouse_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse_TrackerUITests.swift; sourceTree = "<group>"; };
+		0B579CCB23721E8D000F9FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BDB83602368E0B4002DE1C4 /* Frameworks */ = {
+		0B579CA123721E8C000F9FED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDB83762368E0B8002DE1C4 /* Frameworks */ = {
+		0B579CB723721E8D000F9FED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDB83812368E0B8002DE1C4 /* Frameworks */ = {
+		0B579CC223721E8D000F9FED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,146 +76,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BDB835A2368E0B4002DE1C4 = {
+		0B579C9B23721E8C000F9FED = {
 			isa = PBXGroup;
 			children = (
-				0BDB83652368E0B4002DE1C4 /* Mouse Tracker */,
-				0BDB837C2368E0B8002DE1C4 /* Mouse TrackerTests */,
-				0BDB83872368E0B8002DE1C4 /* Mouse TrackerUITests */,
-				0BDB83642368E0B4002DE1C4 /* Products */,
+				0B579CA623721E8C000F9FED /* Mouse-Tracker */,
+				0B579CBD23721E8D000F9FED /* Mouse-TrackerTests */,
+				0B579CC823721E8D000F9FED /* Mouse-TrackerUITests */,
+				0B579CA523721E8C000F9FED /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0BDB83642368E0B4002DE1C4 /* Products */ = {
+		0B579CA523721E8C000F9FED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0BDB83632368E0B4002DE1C4 /* Mouse Tracker.app */,
-				0BDB83792368E0B8002DE1C4 /* Mouse TrackerTests.xctest */,
-				0BDB83842368E0B8002DE1C4 /* Mouse TrackerUITests.xctest */,
+				0B579CA423721E8C000F9FED /* Mouse-Tracker.app */,
+				0B579CBA23721E8D000F9FED /* Mouse-TrackerTests.xctest */,
+				0B579CC523721E8D000F9FED /* Mouse-TrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0BDB83652368E0B4002DE1C4 /* Mouse Tracker */ = {
+		0B579CA623721E8C000F9FED /* Mouse-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				0BDB83662368E0B4002DE1C4 /* AppDelegate.swift */,
-				0BDB83682368E0B4002DE1C4 /* SceneDelegate.swift */,
-				0BDB836A2368E0B4002DE1C4 /* ContentView.swift */,
-				0BDB836C2368E0B8002DE1C4 /* Assets.xcassets */,
-				0BDB83712368E0B8002DE1C4 /* LaunchScreen.storyboard */,
-				0BDB83742368E0B8002DE1C4 /* Info.plist */,
-				0BDB836E2368E0B8002DE1C4 /* Preview Content */,
+				0B579CA723721E8C000F9FED /* AppDelegate.swift */,
+				0B579CA923721E8C000F9FED /* SceneDelegate.swift */,
+				0B579CAB23721E8C000F9FED /* ViewController.swift */,
+				0B579CAD23721E8C000F9FED /* Main.storyboard */,
+				0B579CB023721E8D000F9FED /* Assets.xcassets */,
+				0B579CB223721E8D000F9FED /* LaunchScreen.storyboard */,
+				0B579CB523721E8D000F9FED /* Info.plist */,
 			);
-			path = "Mouse Tracker";
+			path = "Mouse-Tracker";
 			sourceTree = "<group>";
 		};
-		0BDB836E2368E0B8002DE1C4 /* Preview Content */ = {
+		0B579CBD23721E8D000F9FED /* Mouse-TrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				0BDB836F2368E0B8002DE1C4 /* Preview Assets.xcassets */,
+				0B579CBE23721E8D000F9FED /* Mouse_TrackerTests.swift */,
+				0B579CC023721E8D000F9FED /* Info.plist */,
 			);
-			path = "Preview Content";
+			path = "Mouse-TrackerTests";
 			sourceTree = "<group>";
 		};
-		0BDB837C2368E0B8002DE1C4 /* Mouse TrackerTests */ = {
+		0B579CC823721E8D000F9FED /* Mouse-TrackerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0BDB837D2368E0B8002DE1C4 /* Mouse_TrackerTests.swift */,
-				0BDB837F2368E0B8002DE1C4 /* Info.plist */,
+				0B579CC923721E8D000F9FED /* Mouse_TrackerUITests.swift */,
+				0B579CCB23721E8D000F9FED /* Info.plist */,
 			);
-			path = "Mouse TrackerTests";
-			sourceTree = "<group>";
-		};
-		0BDB83872368E0B8002DE1C4 /* Mouse TrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0BDB83882368E0B8002DE1C4 /* Mouse_TrackerUITests.swift */,
-				0BDB838A2368E0B8002DE1C4 /* Info.plist */,
-			);
-			path = "Mouse TrackerUITests";
+			path = "Mouse-TrackerUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0BDB83622368E0B4002DE1C4 /* Mouse Tracker */ = {
+		0B579CA323721E8C000F9FED /* Mouse-Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BDB838D2368E0B8002DE1C4 /* Build configuration list for PBXNativeTarget "Mouse Tracker" */;
+			buildConfigurationList = 0B579CCE23721E8D000F9FED /* Build configuration list for PBXNativeTarget "Mouse-Tracker" */;
 			buildPhases = (
-				0BDB835F2368E0B4002DE1C4 /* Sources */,
-				0BDB83602368E0B4002DE1C4 /* Frameworks */,
-				0BDB83612368E0B4002DE1C4 /* Resources */,
+				0B579CA023721E8C000F9FED /* Sources */,
+				0B579CA123721E8C000F9FED /* Frameworks */,
+				0B579CA223721E8C000F9FED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Mouse Tracker";
-			productName = "Mouse Tracker";
-			productReference = 0BDB83632368E0B4002DE1C4 /* Mouse Tracker.app */;
+			name = "Mouse-Tracker";
+			productName = "Mouse-Tracker";
+			productReference = 0B579CA423721E8C000F9FED /* Mouse-Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0BDB83782368E0B8002DE1C4 /* Mouse TrackerTests */ = {
+		0B579CB923721E8D000F9FED /* Mouse-TrackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BDB83902368E0B8002DE1C4 /* Build configuration list for PBXNativeTarget "Mouse TrackerTests" */;
+			buildConfigurationList = 0B579CD123721E8D000F9FED /* Build configuration list for PBXNativeTarget "Mouse-TrackerTests" */;
 			buildPhases = (
-				0BDB83752368E0B8002DE1C4 /* Sources */,
-				0BDB83762368E0B8002DE1C4 /* Frameworks */,
-				0BDB83772368E0B8002DE1C4 /* Resources */,
+				0B579CB623721E8D000F9FED /* Sources */,
+				0B579CB723721E8D000F9FED /* Frameworks */,
+				0B579CB823721E8D000F9FED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BDB837B2368E0B8002DE1C4 /* PBXTargetDependency */,
+				0B579CBC23721E8D000F9FED /* PBXTargetDependency */,
 			);
-			name = "Mouse TrackerTests";
-			productName = "Mouse TrackerTests";
-			productReference = 0BDB83792368E0B8002DE1C4 /* Mouse TrackerTests.xctest */;
+			name = "Mouse-TrackerTests";
+			productName = "Mouse-TrackerTests";
+			productReference = 0B579CBA23721E8D000F9FED /* Mouse-TrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0BDB83832368E0B8002DE1C4 /* Mouse TrackerUITests */ = {
+		0B579CC423721E8D000F9FED /* Mouse-TrackerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0BDB83932368E0B8002DE1C4 /* Build configuration list for PBXNativeTarget "Mouse TrackerUITests" */;
+			buildConfigurationList = 0B579CD423721E8D000F9FED /* Build configuration list for PBXNativeTarget "Mouse-TrackerUITests" */;
 			buildPhases = (
-				0BDB83802368E0B8002DE1C4 /* Sources */,
-				0BDB83812368E0B8002DE1C4 /* Frameworks */,
-				0BDB83822368E0B8002DE1C4 /* Resources */,
+				0B579CC123721E8D000F9FED /* Sources */,
+				0B579CC223721E8D000F9FED /* Frameworks */,
+				0B579CC323721E8D000F9FED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BDB83862368E0B8002DE1C4 /* PBXTargetDependency */,
+				0B579CC723721E8D000F9FED /* PBXTargetDependency */,
 			);
-			name = "Mouse TrackerUITests";
-			productName = "Mouse TrackerUITests";
-			productReference = 0BDB83842368E0B8002DE1C4 /* Mouse TrackerUITests.xctest */;
+			name = "Mouse-TrackerUITests";
+			productName = "Mouse-TrackerUITests";
+			productReference = 0B579CC523721E8D000F9FED /* Mouse-TrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0BDB835B2368E0B4002DE1C4 /* Project object */ = {
+		0B579C9C23721E8C000F9FED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Keegan Papakipos";
 				TargetAttributes = {
-					0BDB83622368E0B4002DE1C4 = {
+					0B579CA323721E8C000F9FED = {
 						CreatedOnToolsVersion = 11.1;
 					};
-					0BDB83782368E0B8002DE1C4 = {
+					0B579CB923721E8D000F9FED = {
 						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 0BDB83622368E0B4002DE1C4;
+						TestTargetID = 0B579CA323721E8C000F9FED;
 					};
-					0BDB83832368E0B8002DE1C4 = {
+					0B579CC423721E8D000F9FED = {
 						CreatedOnToolsVersion = 11.1;
-						TestTargetID = 0BDB83622368E0B4002DE1C4;
+						TestTargetID = 0B579CA323721E8C000F9FED;
 					};
 				};
 			};
-			buildConfigurationList = 0BDB835E2368E0B4002DE1C4 /* Build configuration list for PBXProject "Mouse Tracker" */;
+			buildConfigurationList = 0B579C9F23721E8C000F9FED /* Build configuration list for PBXProject "Mouse-Tracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 0BDB835A2368E0B4002DE1C4;
-			productRefGroup = 0BDB83642368E0B4002DE1C4 /* Products */;
+			mainGroup = 0B579C9B23721E8C000F9FED;
+			productRefGroup = 0B579CA523721E8C000F9FED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BDB83622368E0B4002DE1C4 /* Mouse Tracker */,
-				0BDB83782368E0B8002DE1C4 /* Mouse TrackerTests */,
-				0BDB83832368E0B8002DE1C4 /* Mouse TrackerUITests */,
+				0B579CA323721E8C000F9FED /* Mouse-Tracker */,
+				0B579CB923721E8D000F9FED /* Mouse-TrackerTests */,
+				0B579CC423721E8D000F9FED /* Mouse-TrackerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0BDB83612368E0B4002DE1C4 /* Resources */ = {
+		0B579CA223721E8C000F9FED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDB83732368E0B8002DE1C4 /* LaunchScreen.storyboard in Resources */,
-				0BDB83702368E0B8002DE1C4 /* Preview Assets.xcassets in Resources */,
-				0BDB836D2368E0B8002DE1C4 /* Assets.xcassets in Resources */,
+				0B579CB423721E8D000F9FED /* LaunchScreen.storyboard in Resources */,
+				0B579CB123721E8D000F9FED /* Assets.xcassets in Resources */,
+				0B579CAF23721E8C000F9FED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDB83772368E0B8002DE1C4 /* Resources */ = {
+		0B579CB823721E8D000F9FED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDB83822368E0B8002DE1C4 /* Resources */ = {
+		0B579CC323721E8D000F9FED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,52 +255,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0BDB835F2368E0B4002DE1C4 /* Sources */ = {
+		0B579CA023721E8C000F9FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDB83672368E0B4002DE1C4 /* AppDelegate.swift in Sources */,
-				0BDB83692368E0B4002DE1C4 /* SceneDelegate.swift in Sources */,
-				0BDB836B2368E0B4002DE1C4 /* ContentView.swift in Sources */,
+				0B579CAC23721E8C000F9FED /* ViewController.swift in Sources */,
+				0B579CA823721E8C000F9FED /* AppDelegate.swift in Sources */,
+				0B579CAA23721E8C000F9FED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDB83752368E0B8002DE1C4 /* Sources */ = {
+		0B579CB623721E8D000F9FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDB837E2368E0B8002DE1C4 /* Mouse_TrackerTests.swift in Sources */,
+				0B579CBF23721E8D000F9FED /* Mouse_TrackerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDB83802368E0B8002DE1C4 /* Sources */ = {
+		0B579CC123721E8D000F9FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDB83892368E0B8002DE1C4 /* Mouse_TrackerUITests.swift in Sources */,
+				0B579CCA23721E8D000F9FED /* Mouse_TrackerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0BDB837B2368E0B8002DE1C4 /* PBXTargetDependency */ = {
+		0B579CBC23721E8D000F9FED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0BDB83622368E0B4002DE1C4 /* Mouse Tracker */;
-			targetProxy = 0BDB837A2368E0B8002DE1C4 /* PBXContainerItemProxy */;
+			target = 0B579CA323721E8C000F9FED /* Mouse-Tracker */;
+			targetProxy = 0B579CBB23721E8D000F9FED /* PBXContainerItemProxy */;
 		};
-		0BDB83862368E0B8002DE1C4 /* PBXTargetDependency */ = {
+		0B579CC723721E8D000F9FED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0BDB83622368E0B4002DE1C4 /* Mouse Tracker */;
-			targetProxy = 0BDB83852368E0B8002DE1C4 /* PBXContainerItemProxy */;
+			target = 0B579CA323721E8C000F9FED /* Mouse-Tracker */;
+			targetProxy = 0B579CC623721E8D000F9FED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0BDB83712368E0B8002DE1C4 /* LaunchScreen.storyboard */ = {
+		0B579CAD23721E8C000F9FED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0BDB83722368E0B8002DE1C4 /* Base */,
+				0B579CAE23721E8C000F9FED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B579CB223721E8D000F9FED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B579CB323721E8D000F9FED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0BDB838B2368E0B8002DE1C4 /* Debug */ = {
+		0B579CCC23721E8D000F9FED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		0BDB838C2368E0B8002DE1C4 /* Release */ = {
+		0B579CCD23721E8D000F9FED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,15 +430,13 @@
 			};
 			name = Release;
 		};
-		0BDB838E2368E0B8002DE1C4 /* Debug */ = {
+		0B579CCF23721E8D000F9FED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Mouse Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = G7E53UAZGK;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Mouse Tracker/Info.plist";
+				INFOPLIST_FILE = "Mouse-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,15 +448,13 @@
 			};
 			name = Debug;
 		};
-		0BDB838F2368E0B8002DE1C4 /* Release */ = {
+		0B579CD023721E8D000F9FED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Mouse Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = G7E53UAZGK;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Mouse Tracker/Info.plist";
+				INFOPLIST_FILE = "Mouse-Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,14 +466,14 @@
 			};
 			name = Release;
 		};
-		0BDB83912368E0B8002DE1C4 /* Debug */ = {
+		0B579CD223721E8D000F9FED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7E53UAZGK;
-				INFOPLIST_FILE = "Mouse TrackerTests/Info.plist";
+				INFOPLIST_FILE = "Mouse-TrackerTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,18 +484,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mouse Tracker.app/Mouse Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mouse-Tracker.app/Mouse-Tracker";
 			};
 			name = Debug;
 		};
-		0BDB83922368E0B8002DE1C4 /* Release */ = {
+		0B579CD323721E8D000F9FED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7E53UAZGK;
-				INFOPLIST_FILE = "Mouse TrackerTests/Info.plist";
+				INFOPLIST_FILE = "Mouse-TrackerTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -510,17 +506,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mouse Tracker.app/Mouse Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mouse-Tracker.app/Mouse-Tracker";
 			};
 			name = Release;
 		};
-		0BDB83942368E0B8002DE1C4 /* Debug */ = {
+		0B579CD523721E8D000F9FED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7E53UAZGK;
-				INFOPLIST_FILE = "Mouse TrackerUITests/Info.plist";
+				INFOPLIST_FILE = "Mouse-TrackerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,17 +526,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Mouse Tracker";
+				TEST_TARGET_NAME = "Mouse-Tracker";
 			};
 			name = Debug;
 		};
-		0BDB83952368E0B8002DE1C4 /* Release */ = {
+		0B579CD623721E8D000F9FED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7E53UAZGK;
-				INFOPLIST_FILE = "Mouse TrackerUITests/Info.plist";
+				INFOPLIST_FILE = "Mouse-TrackerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -550,50 +546,50 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Mouse Tracker";
+				TEST_TARGET_NAME = "Mouse-Tracker";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BDB835E2368E0B4002DE1C4 /* Build configuration list for PBXProject "Mouse Tracker" */ = {
+		0B579C9F23721E8C000F9FED /* Build configuration list for PBXProject "Mouse-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BDB838B2368E0B8002DE1C4 /* Debug */,
-				0BDB838C2368E0B8002DE1C4 /* Release */,
+				0B579CCC23721E8D000F9FED /* Debug */,
+				0B579CCD23721E8D000F9FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BDB838D2368E0B8002DE1C4 /* Build configuration list for PBXNativeTarget "Mouse Tracker" */ = {
+		0B579CCE23721E8D000F9FED /* Build configuration list for PBXNativeTarget "Mouse-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BDB838E2368E0B8002DE1C4 /* Debug */,
-				0BDB838F2368E0B8002DE1C4 /* Release */,
+				0B579CCF23721E8D000F9FED /* Debug */,
+				0B579CD023721E8D000F9FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BDB83902368E0B8002DE1C4 /* Build configuration list for PBXNativeTarget "Mouse TrackerTests" */ = {
+		0B579CD123721E8D000F9FED /* Build configuration list for PBXNativeTarget "Mouse-TrackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BDB83912368E0B8002DE1C4 /* Debug */,
-				0BDB83922368E0B8002DE1C4 /* Release */,
+				0B579CD223721E8D000F9FED /* Debug */,
+				0B579CD323721E8D000F9FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0BDB83932368E0B8002DE1C4 /* Build configuration list for PBXNativeTarget "Mouse TrackerUITests" */ = {
+		0B579CD423721E8D000F9FED /* Build configuration list for PBXNativeTarget "Mouse-TrackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BDB83942368E0B8002DE1C4 /* Debug */,
-				0BDB83952368E0B8002DE1C4 /* Release */,
+				0B579CD523721E8D000F9FED /* Debug */,
+				0B579CD623721E8D000F9FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0BDB835B2368E0B4002DE1C4 /* Project object */;
+	rootObject = 0B579C9C23721E8C000F9FED /* Project object */;
 }
