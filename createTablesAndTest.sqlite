@@ -1,0 +1,40 @@
+create table IF NOT EXISTS Disney_user(user_id PRIMARY KEY, first_name TEXT, last_name TEXT, user_pwd TEXT, date_created TEXT, favorite_land TEXT);
+create table IF NOT EXISTS Activity(actv_id PRIMARY KEY, title TEXT, description TEXT, park_land TEXT, kid_friendly TEXT, trivia TEXT, type TEXT, theme TEXT);
+create table IF NOT EXISTS Adventure(adv_id TEXT PRIMARY KEY, user_id TEXT, start_date TEXT, complete_date TEXT, theme TEXT, title TEXT, density TEXT, FOREIGN KEY(user_id) REFERENCES Disney_user(user_id));
+create table IF NOT EXISTS Adventure_status(actv_id TEXT, adv_id TEXT, start_date TEXT, date_completed TEXT, FOREIGN KEY(actv_id) references Activity(actv_id), FOREIGN KEY(adv_id) references Adventure(adv_id));
+create table IF NOT EXISTS Achievement(achv_id TEXT PRIMARY KEY, title TEXT, counter_required INTEGER, description TEXT);
+create table IF NOT EXISTS Achievement_status(user_id TEXT, achv_id TEXT, date_earned TEXT, count_achieved INTEGER, FOREIGN KEY(user_id) references Disney_user(user_id), FOREIGN KEY(achv_id) references Achievement(achv_id));
+ 
+delete from achievement_status;
+delete from achievement;
+delete from adventure_status;
+delete from adventure;
+delete from disney_user;
+delete from activity;
+
+insert into Disney_user values('001', 'Edmond', 'Williams', 'cat', '19900101', 'apple');
+insert into Disney_user values('002', 'Joe', 'Smith', 'dog', '19900201', 'orange');
+insert into Disney_user values('003', 'Bob', 'Stone', 'log', '19900301', 'pear');
+insert into Disney_user values('004', 'Bill', 'Stone', 'pot', '19900301', 'tomato');
+insert into Disney_user values('005', 'Jane', 'Will', 'cop', '19900304', 'mandarin');
+
+insert into Adventure values('101', '001', '19910101', '19910103', 'pink', 'Party','high');
+insert into Adventure values('102', '001', '19910103', '19910105', 'yellow', 'Go','low');
+insert into Adventure values('103', '002', '19910303', '19910404', 'pink', 'Fun','medium');
+insert into Adventure values('104', '003', '19910305', '19910505', 'yellow', 'Yup','low');
+
+insert into Activity values('201', 'Go go', 'fast and fun', 'orange', 'no', NULL, 'ride', 'yellow');
+insert into Activity values('202', 'Run', 'run run', 'pear', 'yes', NULL, 'activity', 'pink');
+insert into Activity values('203', 'Water Blast', 'get wet', 'apple', 'yes', 'oldest ride', 'ride', 'blue');
+
+insert into Adventure_status values('201', '101', '19910101', '19910101');
+insert into Adventure_status values('202', '102', '19910103', NULL);
+
+insert into Achievement values('401', 'Find mickeys', '5', 'Find lots of mickeys');
+insert into Achievement values('402', 'Ride Water Blast', '3', 'Ride Water Blast a lot');
+
+insert into Achievement_status values('001','401',NULL, 4);
+insert into Achievement_status values('002','402', '19910404', 10);
+ 
+ 
+ 
