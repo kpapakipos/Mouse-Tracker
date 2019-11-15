@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		0B579CA823721E8C000F9FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CA723721E8C000F9FED /* AppDelegate.swift */; };
 		0B579CAA23721E8C000F9FED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CA923721E8C000F9FED /* SceneDelegate.swift */; };
-		0B579CAC23721E8C000F9FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CAB23721E8C000F9FED /* ViewController.swift */; };
 		0B579CAF23721E8C000F9FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B579CAD23721E8C000F9FED /* Main.storyboard */; };
 		0B579CB123721E8D000F9FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B579CB023721E8D000F9FED /* Assets.xcassets */; };
-		0B579CB423721E8D000F9FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B579CB223721E8D000F9FED /* LaunchScreen.storyboard */; };
 		0B579CBF23721E8D000F9FED /* Mouse_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CBE23721E8D000F9FED /* Mouse_TrackerTests.swift */; };
 		0B579CCA23721E8D000F9FED /* Mouse_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CC923721E8D000F9FED /* Mouse_TrackerUITests.swift */; };
+		2977BAFC237E09AA0082EF49 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */; };
+		2977BAFE237E0C750082EF49 /* CurrentAdvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */; };
+		2977BB00237E153B0082EF49 /* PreviousAdventureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFF237E153B0082EF49 /* PreviousAdventureViewController.swift */; };
+		2977BB02237E16470082EF49 /* AdventureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */; };
+		2977BB08237E1C3A0082EF49 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +41,8 @@
 		0B579CA423721E8C000F9FED /* Mouse-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mouse-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B579CA723721E8C000F9FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B579CA923721E8C000F9FED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B579CAB23721E8C000F9FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B579CAE23721E8C000F9FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B579CB023721E8D000F9FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B579CB323721E8D000F9FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B579CB523721E8D000F9FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B579CBA23721E8D000F9FED /* Mouse-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mouse-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B579CBE23721E8D000F9FED /* Mouse_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse_TrackerTests.swift; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		0B579CC523721E8D000F9FED /* Mouse-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mouse-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B579CC923721E8D000F9FED /* Mouse_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse_TrackerUITests.swift; sourceTree = "<group>"; };
 		0B579CCB23721E8D000F9FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAdvViewController.swift; sourceTree = "<group>"; };
+		2977BAFF237E153B0082EF49 /* PreviousAdventureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousAdventureViewController.swift; sourceTree = "<group>"; };
+		2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTableViewCell.swift; sourceTree = "<group>"; };
+		2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,16 @@
 		0B579CA623721E8C000F9FED /* Mouse-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				2977BAFF237E153B0082EF49 /* PreviousAdventureViewController.swift */,
+				2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */,
 				0B579CA723721E8C000F9FED /* AppDelegate.swift */,
 				0B579CA923721E8C000F9FED /* SceneDelegate.swift */,
-				0B579CAB23721E8C000F9FED /* ViewController.swift */,
 				0B579CAD23721E8C000F9FED /* Main.storyboard */,
+				2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */,
+				2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */,
 				0B579CB023721E8D000F9FED /* Assets.xcassets */,
-				0B579CB223721E8D000F9FED /* LaunchScreen.storyboard */,
 				0B579CB523721E8D000F9FED /* Info.plist */,
+				2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */,
 			);
 			path = "Mouse-Tracker";
 			sourceTree = "<group>";
@@ -232,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B579CB423721E8D000F9FED /* LaunchScreen.storyboard in Resources */,
 				0B579CB123721E8D000F9FED /* Assets.xcassets in Resources */,
 				0B579CAF23721E8C000F9FED /* Main.storyboard in Resources */,
 			);
@@ -259,9 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B579CAC23721E8C000F9FED /* ViewController.swift in Sources */,
+				2977BB02237E16470082EF49 /* AdventureTableViewCell.swift in Sources */,
+				2977BAFE237E0C750082EF49 /* CurrentAdvViewController.swift in Sources */,
+				2977BAFC237E09AA0082EF49 /* ActivityTableViewCell.swift in Sources */,
 				0B579CA823721E8C000F9FED /* AppDelegate.swift in Sources */,
+				2977BB08237E1C3A0082EF49 /* ActivityViewController.swift in Sources */,
 				0B579CAA23721E8C000F9FED /* SceneDelegate.swift in Sources */,
+				2977BB00237E153B0082EF49 /* PreviousAdventureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +315,6 @@
 				0B579CAE23721E8C000F9FED /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0B579CB223721E8D000F9FED /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B579CB323721E8D000F9FED /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ActivityDetailsViewController.swift
 //  Mouse-Tracker
 //
 //  Created by Jack Dangelmaier on 11/14/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ActivityDetailsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  LaunchScreenViewController.swift
 //  Mouse-Tracker
 //
-//  Created by Jack Dangelmaier on 11/14/19.
+//  Created by Jack Dangelmaier on 11/15/19.
 //  Copyright © 2019 Keegan Papakipos. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LaunchScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
