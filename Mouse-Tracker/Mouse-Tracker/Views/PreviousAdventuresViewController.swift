@@ -1,5 +1,5 @@
 //
-//  PreviousAdventureViewController.swift
+//  PreviousAdventuresViewController.swift
 //  Mouse-Tracker
 //
 //  Created by Jack Dangelmaier on 11/14/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreviousAdventureViewController : UIViewController, UITableViewDataSource, UITableViewDelegate{
+class PreviousAdventuresViewController : UIViewController, UITableViewDataSource, UITableViewDelegate{
   
 
     @IBOutlet weak var PreviousAdvTable: UITableView!
