@@ -26,36 +26,36 @@
         <!--History-->
         <scene sceneID="bbP-Bo-P6G">
             <objects>
-                <viewController title="History" id="7kv-NP-5fz" customClass="PreviousAdventureViewController" customModule="Mouse_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="History" id="7kv-NP-5fz" customClass="PreviousAdventuresViewController" customModule="Mouse_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xhk-AI-VzY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uxy-Sz-Oi3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uxy-Sz-Oi3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PreviousAdvCell" rowHeight="102" id="ktm-UT-iIj" customClass="AdventureTableViewCell" customModule="Mouse_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="102"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PreviousAdvCell" id="ktm-UT-iIj" customClass="AdventureTableViewCell" customModule="Mouse_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="102.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ktm-UT-iIj" id="UZL-cP-Onr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventure Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJx-DK-p65">
-                                                    <rect key="frame" x="16" y="11" width="128" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Adventure Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJx-DK-p65">
+                                                    <rect key="frame" x="20" y="11" width="128" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-fQ-oO1">
-                                                    <rect key="frame" x="16" y="40" width="87" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Progress %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-fQ-oO1">
+                                                    <rect key="frame" x="20" y="40" width="87" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details (sliders etc)..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-XT-5LP">
-                                                    <rect key="frame" x="16" y="69" width="162" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Details (sliders etc)..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-XT-5LP">
+                                                    <rect key="frame" x="20" y="69" width="162" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -68,6 +68,7 @@
                                                 <constraint firstItem="3Mx-XT-5LP" firstAttribute="top" secondItem="rgf-fQ-oO1" secondAttribute="bottom" constant="8" id="Hz7-nM-0a3"/>
                                                 <constraint firstItem="rgf-fQ-oO1" firstAttribute="top" secondItem="mJx-DK-p65" secondAttribute="bottom" constant="8" id="dhG-kr-tVM"/>
                                                 <constraint firstItem="3Mx-XT-5LP" firstAttribute="leading" secondItem="rgf-fQ-oO1" secondAttribute="leading" id="r2B-YV-Vw9"/>
+                                                <constraint firstAttribute="bottom" secondItem="3Mx-XT-5LP" secondAttribute="bottom" constant="12" id="vHw-mh-Zlq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -92,6 +93,7 @@
                             <constraint firstItem="Uxy-Sz-Oi3" firstAttribute="top" secondItem="xhk-AI-VzY" secondAttribute="top" constant="44" id="8Vc-Qw-I2d"/>
                             <constraint firstItem="kAI-6W-MVy" firstAttribute="centerX" secondItem="NAJ-Iz-Gyl" secondAttribute="centerX" id="B1k-p9-sev"/>
                             <constraint firstItem="kAI-6W-MVy" firstAttribute="top" secondItem="Uxy-Sz-Oi3" secondAttribute="bottom" constant="8" id="Gqg-jr-pVp"/>
+                            <constraint firstItem="Uxy-Sz-Oi3" firstAttribute="leading" secondItem="NAJ-Iz-Gyl" secondAttribute="leading" id="MNc-xq-PCf"/>
                             <constraint firstItem="NAJ-Iz-Gyl" firstAttribute="bottom" secondItem="kAI-6W-MVy" secondAttribute="bottom" id="UjC-F5-6pE"/>
                             <constraint firstItem="NAJ-Iz-Gyl" firstAttribute="trailing" secondItem="Uxy-Sz-Oi3" secondAttribute="trailing" id="Y7w-mM-QpI"/>
                             <constraint firstItem="kAI-6W-MVy" firstAttribute="width" secondItem="xhk-AI-VzY" secondAttribute="width" id="maK-78-OlE"/>

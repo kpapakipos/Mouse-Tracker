@@ -17,7 +17,7 @@
 		0B579CCA23721E8D000F9FED /* Mouse_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B579CC923721E8D000F9FED /* Mouse_TrackerUITests.swift */; };
 		2977BAFC237E09AA0082EF49 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */; };
 		2977BAFE237E0C750082EF49 /* CurrentAdvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */; };
-		2977BB00237E153B0082EF49 /* PreviousAdventureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFF237E153B0082EF49 /* PreviousAdventureViewController.swift */; };
+		2977BB00237E153B0082EF49 /* PreviousAdventuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFF237E153B0082EF49 /* PreviousAdventuresViewController.swift */; };
 		2977BB02237E16470082EF49 /* AdventureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */; };
 		2977BB08237E1C3A0082EF49 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,7 +56,7 @@
 		0B579CCB23721E8D000F9FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
 		2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAdvViewController.swift; sourceTree = "<group>"; };
-		2977BAFF237E153B0082EF49 /* PreviousAdventureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousAdventureViewController.swift; sourceTree = "<group>"; };
+		2977BAFF237E153B0082EF49 /* PreviousAdventuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousAdventuresViewController.swift; sourceTree = "<group>"; };
 		2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTableViewCell.swift; sourceTree = "<group>"; };
 		2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +86,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B336DCB237F716F0038B35E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2977BAFF237E153B0082EF49 /* PreviousAdventuresViewController.swift */,
+				2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */,
+				2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */,
+				2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */,
+				2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */,
+				0B336DC7237F6DE00038B35E /* NewAdventureViewController.swift */,
+				0B336DC9237F6E030038B35E /* MoreOptionsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0B579C9B23721E8C000F9FED = {
 			isa = PBXGroup;
 			children = (
@@ -109,18 +123,12 @@
 		0B579CA623721E8C000F9FED /* Mouse-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				2977BAFF237E153B0082EF49 /* PreviousAdventureViewController.swift */,
-				2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */,
+				0B336DCB237F716F0038B35E /* Views */,
 				0B579CA723721E8C000F9FED /* AppDelegate.swift */,
 				0B579CA923721E8C000F9FED /* SceneDelegate.swift */,
 				0B579CAD23721E8C000F9FED /* Main.storyboard */,
-				2977BAFD237E0C750082EF49 /* CurrentAdvViewController.swift */,
-				2977BAFB237E09AA0082EF49 /* ActivityTableViewCell.swift */,
 				0B579CB023721E8D000F9FED /* Assets.xcassets */,
 				0B579CB523721E8D000F9FED /* Info.plist */,
-				2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */,
-				0B336DC7237F6DE00038B35E /* NewAdventureViewController.swift */,
-				0B336DC9237F6E030038B35E /* MoreOptionsViewController.swift */,
 			);
 			path = "Mouse-Tracker";
 			sourceTree = "<group>";
@@ -281,7 +289,7 @@
 				0B336DC8237F6DE00038B35E /* NewAdventureViewController.swift in Sources */,
 				2977BB08237E1C3A0082EF49 /* ActivityViewController.swift in Sources */,
 				0B579CAA23721E8C000F9FED /* SceneDelegate.swift in Sources */,
-				2977BB00237E153B0082EF49 /* PreviousAdventureViewController.swift in Sources */,
+				2977BB00237E153B0082EF49 /* PreviousAdventuresViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
