@@ -48,7 +48,11 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         self.performSegue(withIdentifier: "goToAdventure", sender: self)
     }
       
-
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "goToAdvDetails", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

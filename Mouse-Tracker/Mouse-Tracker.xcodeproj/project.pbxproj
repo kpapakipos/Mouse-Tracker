@@ -20,6 +20,7 @@
 		2977BB00237E153B0082EF49 /* PreviousAdventuresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BAFF237E153B0082EF49 /* PreviousAdventuresViewController.swift */; };
 		2977BB02237E16470082EF49 /* AdventureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */; };
 		2977BB08237E1C3A0082EF49 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */; };
+		29E894602384AF7F0079F5E0 /* AdventureDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E8945F2384AF7F0079F5E0 /* AdventureDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2977BAFF237E153B0082EF49 /* PreviousAdventuresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousAdventuresViewController.swift; sourceTree = "<group>"; };
 		2977BB01237E16470082EF49 /* AdventureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureTableViewCell.swift; sourceTree = "<group>"; };
 		2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		29E8945F2384AF7F0079F5E0 /* AdventureDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventureDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				2977BB07237E1C3A0082EF49 /* ActivityViewController.swift */,
 				0B336DC7237F6DE00038B35E /* NewAdventureViewController.swift */,
 				0B336DC9237F6E030038B35E /* MoreOptionsViewController.swift */,
+				29E8945F2384AF7F0079F5E0 /* AdventureDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				2977BB02237E16470082EF49 /* AdventureTableViewCell.swift in Sources */,
 				2977BAFE237E0C750082EF49 /* CurrentAdvViewController.swift in Sources */,
+				29E894602384AF7F0079F5E0 /* AdventureDetailsViewController.swift in Sources */,
 				2977BAFC237E09AA0082EF49 /* ActivityTableViewCell.swift in Sources */,
 				0B336DCA237F6E030038B35E /* MoreOptionsViewController.swift in Sources */,
 				0B579CA823721E8C000F9FED /* AppDelegate.swift in Sources */,

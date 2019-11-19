@@ -37,7 +37,7 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         //TODO: should put the names of the activities from the database in here
         cell.ActivityNameLabel?.text = tempActivityArray[indexPath.row] //puts data from array into cell
         
-        //adds image
+        //TODO: adds image should be based on if the activity is checked off
         cell.MickeyCheckBox?.image = UIImage(named: "MickeyFace")
         
         return cell
@@ -50,6 +50,7 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         //TODO: update mickey photo image here
         //this does not work properly
         let cell = tableView.dequeueReusableCell(withIdentifier: "CurrentAdvCell", for: indexPath) as! ActivityTableViewCell
+        
         cell.MickeyCheckBox?.image = UIImage(named: "Mickey")
         
         //This is an animation option that makes the click look nicer. Flashes instead of stays grey

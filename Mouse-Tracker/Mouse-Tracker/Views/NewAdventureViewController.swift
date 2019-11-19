@@ -10,11 +10,20 @@ import UIKit
 
 class NewAdventureViewController: UIViewController {
 
+    
+    //TODO: calls model generate new adventure
+    @IBAction func generateAdventureButton(_ sender: UIButton) {
+        print("it worked")
+        
+    }
+    
     override func viewDidLoad() {
+        print("yay")
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
     
 
     /*

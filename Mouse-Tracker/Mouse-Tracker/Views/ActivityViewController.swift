@@ -19,6 +19,8 @@ class ActivityViewController: UIViewController {
     @IBOutlet weak var kidFriendlyValue: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var typeValue: UILabel!
+    @IBOutlet weak var heightLabel: UILabel!
+    @IBOutlet weak var heightValue: UILabel!
     
     
     override func viewDidLoad() {
