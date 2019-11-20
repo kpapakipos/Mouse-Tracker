@@ -145,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LV-WP-Mnx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31.884057971014496" y="-1620.5357142857142"/>
+            <point key="canvasLocation" x="417" y="-1689"/>
         </scene>
         <!--History-->
         <scene sceneID="bbP-Bo-P6G">
@@ -447,13 +447,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFq-gk-qKX">
-                                <rect key="frame" x="340" y="15" width="32" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VWJ-9g-WZs"/>
@@ -461,13 +454,12 @@
                     <navigationItem key="navigationItem" id="r5N-AG-pwO"/>
                     <connections>
                         <outlet property="CurrentAdvTableView" destination="zJG-Gg-YBe" id="Fo6-g6-CqA"/>
-                        <outlet property="percentComplete" destination="vFq-gk-qKX" id="fZU-rN-wD0"/>
                         <segue destination="qKw-Ux-g2T" kind="presentation" identifier="goToActivityDetails" id="RBc-7A-hPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHR-zA-k2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="-860"/>
+            <point key="canvasLocation" x="31.884057971014496" y="-860.49107142857144"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="Q0A-Z2-WxQ">
@@ -596,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsC-xo-u54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.79710144927537" y="-860.49107142857144"/>
+            <point key="canvasLocation" x="1517" y="-1690"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

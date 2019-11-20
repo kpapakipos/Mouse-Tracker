@@ -20,6 +20,11 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         // Do any additional setup after loading the view.
     }
     
+    //this automatically reloads the page anytime it is viewed which is needed after a new adventure is created and the user goes back to this page
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewDidLoad()
+    }
+    
     let tempActivityArray = ["Find Hidden Mickey", "Roller Coaster 1", "Fun thing 3"]
     
     //TODO: grab number of previous adventure and return here

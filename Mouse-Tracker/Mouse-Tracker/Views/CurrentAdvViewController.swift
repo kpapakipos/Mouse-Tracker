@@ -37,33 +37,48 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         //TODO: should put the names of the activities from the database in here
         cell.ActivityNameLabel?.text = tempActivityArray[indexPath.row] //puts data from array into cell
         
+        
         //TODO: adds image should be based on if the activity is checked off
         cell.MickeyCheckBox?.image = UIImage(named: "MickeyFace")
         
         return cell
     }
     
-    
     //this runs if table is clicked
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //TODO: update mickey photo image here
-        //this does not work properly
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CurrentAdvCell", for: indexPath) as! ActivityTableViewCell
+        //TODO: add offical picture
+        //TODO: Update database
+        //TODO: Update %
+        let cell = tableView.cellForRow(at: indexPath) as! ActivityTableViewCell
+        if(cell.MickeyCheckBox.image == UIImage(named: "MickeyFace")){
+             cell.MickeyCheckBox.image = UIImage(named: "Mickey")
+        }
+        else {
+            cell.MickeyCheckBox.image = UIImage(named: "MickeyFace")
+        }
         
-        cell.MickeyCheckBox?.image = UIImage(named: "Mickey")
         
         //This is an animation option that makes the click look nicer. Flashes instead of stays grey
         tableView.deselectRow(at: indexPath, animated: true)
         
-        //TODO: Update database
-        //TODO: Update %
+        
         
     }
     
     //Will go to the Activity details page if the details button is clicked
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
          self.performSegue(withIdentifier: "goToActivityDetails", sender: self)
+    }
+    
+    
+    //this runs when back button is pressed
+    //TODO: make sure that the previous adventure page is reloaded
+    override func viewWillDisappear(_ animated: Bool) {
+        super .viewWillDisappear(true)
+        if (self.isMovingFromParent){
+            navigationController?.popToRootViewController(animated: true)
+        }
     }
 
     /*

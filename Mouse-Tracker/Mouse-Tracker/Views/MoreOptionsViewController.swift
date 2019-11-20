@@ -16,6 +16,13 @@ class MoreOptionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+           super .viewWillDisappear(true)
+           if (self.isMovingFromParent){
+               //TODO: send the information recorded in this screen to the New adventure page so when a new adventure is created then we can send this information
+                //Maybe have a button on this page that creats a new adventure
+           }
+       }
 
 
     /*

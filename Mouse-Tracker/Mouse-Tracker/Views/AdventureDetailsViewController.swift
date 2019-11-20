@@ -16,24 +16,18 @@ class AdventureDetailsViewController: UIViewController {
     @IBOutlet weak var parksValue: UILabel!
     
     @IBOutlet weak var parkLandLabel: UILabel!
-    
     @IBOutlet weak var parkLandValues: UILabel!
     
     @IBOutlet weak var densityLabel: UILabel!
-    
     @IBOutlet weak var densityValue: UILabel!
     
     @IBOutlet weak var intensityLabel: UILabel!
-    
     @IBOutlet weak var intensityValue: UILabel!
     
-    
     @IBOutlet weak var kidFriendlyLabel: UILabel!
-    
     @IBOutlet weak var kidFriendlyValue: UILabel!
     
     @IBOutlet weak var heightRestrictedLabel: UILabel!
-    
     @IBOutlet weak var heightRestrictedValue: UILabel!
     
     
