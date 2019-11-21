@@ -8,30 +8,38 @@
 
 import UIKit
 
-class NewAdventureViewController: UIViewController {
+protocol canReceiveData {
+    func pass(_ data: [String: AnyObject])
+}
 
+class NewAdventureViewController: UIViewController, canReceiveData {
+    @IBOutlet weak var densitySlider: UISlider!
+    @IBOutlet weak var intensitySlider: UISlider!
+    
+    var sliders: [String: AnyObject] = [:]
     
     //TODO: calls model generate new adventure
-    @IBAction func generateAdventureButton(_ sender: UIButton) {
-        
+    @IBAction func generateAdventureButtonPressed(_ sender: UIButton) {
+        //TODO: use self.sliders as parameter to function
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        sliders["density"] = Int(densitySlider.value * 100) as AnyObject
+        sliders["intensity"] = Int(intensitySlider.value * 100) as AnyObject
     }
     
+    func pass(_ data: [String: AnyObject]) {
+        for (key, value) in data {
+            self.sliders[key] = value
+        }
+    }
     
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "moreOptionsSegue" {
+            (segue.destination as! MoreOptionsViewController).receiveDataDelegate = self
+        }
     }
-    */
-
 }

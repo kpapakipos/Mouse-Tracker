@@ -295,7 +295,7 @@
                                 <rect key="frame" x="160.5" y="411" width="93" height="30"/>
                                 <state key="normal" title="More Options"/>
                                 <connections>
-                                    <segue destination="Ate-nl-O85" kind="show" id="wSM-gi-FFk"/>
+                                    <segue destination="Ate-nl-O85" kind="show" identifier="moreOptionsSegue" id="wSM-gi-FFk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,6 +312,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="PRS-zb-hZz"/>
+                    <connections>
+                        <outlet property="densitySlider" destination="wbo-e5-oLa" id="coW-7Z-ckg"/>
+                        <outlet property="intensitySlider" destination="FSg-mQ-xrG" id="bMt-P6-tOd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -343,10 +347,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBF-6X-Fbc">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rBF-6X-Fbc">
                                 <rect key="frame" x="267" y="124" width="51" height="31"/>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-I4-6U0">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-I4-6U0">
                                 <rect key="frame" x="267" y="163" width="51" height="31"/>
                             </switch>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Du8-UV-uB1">
@@ -393,6 +397,12 @@
                         <viewLayoutGuide key="safeArea" id="OjQ-dm-yRT"/>
                     </view>
                     <navigationItem key="navigationItem" id="ARJ-pi-uZ2"/>
+                    <connections>
+                        <outlet property="heightRestrictedSwitch" destination="i5i-I4-6U0" id="hJt-MM-5Nq"/>
+                        <outlet property="kidFriendlySwitch" destination="rBF-6X-Fbc" id="dTq-fA-mvh"/>
+                        <outlet property="parkLandPicker" destination="Du8-UV-uB1" id="hwf-n1-6Cr"/>
+                        <outlet property="parkPicker" destination="JSV-pa-Ccl" id="qse-Ba-62X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E4I-HS-5Ro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,6 +602,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w4H-JR-h90"/>
+        <segue reference="TaD-hl-l6L"/>
     </inferredMetricsTieBreakers>
 </document>
