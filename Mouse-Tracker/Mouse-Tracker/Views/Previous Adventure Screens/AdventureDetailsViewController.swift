@@ -30,12 +30,18 @@ class AdventureDetailsViewController: UIViewController {
     @IBOutlet weak var heightRestrictedLabel: UILabel!
     @IBOutlet weak var heightRestrictedValue: UILabel!
     
+    var adventure: Adventure!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.AdventureName.text = adventure.title
+        self.parksValue.text = adventure.options["park"] as? String
+        self.parkLandValues.text = adventure.options["park_land"] as? String
+        self.densityValue.text = adventure.options["density"] as? String
+        self.intensityValue.text = adventure.options["intensity"] as? String
+        
     }
     
 

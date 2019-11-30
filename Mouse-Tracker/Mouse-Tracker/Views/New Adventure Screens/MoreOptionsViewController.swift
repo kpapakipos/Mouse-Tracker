@@ -21,7 +21,7 @@ class MoreOptionsViewController: UIViewController, UIPickerViewDelegate, UIPicke
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //if you put Any in the initial declaration (before sorting), it isn't the first element
+        //if you put Any in the initial declaration (before sorting), it isn't the first element. I insert it later to ensure it's the first element in the list
         parkLandOptions.insert("Any", at: 0)
         
         self.parkPicker.delegate = self
@@ -32,14 +32,13 @@ class MoreOptionsViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        //send choices the user made on this screen back to the previous screen, so that screen can then send them to the model when the "create adventure" button is pressed
         if (self.isMovingFromParent) {
-            //TODO: send the information recorded in this screen to the New adventure page so when a new adventure is created then we can send this information
-            //Maybe have a button on this page that creates a new adventure
-            let moreOptions: [String:AnyObject] =
-                ["kid_friendly": (kidFriendlySwitch.isOn ? 1 : 0) as AnyObject,
-                 "height_restricted": (heightRestrictedSwitch.isOn ? 1 : 0) as AnyObject,
-                 "park": parkOptions[parkPicker.selectedRow(inComponent: 0)] as AnyObject,
-                 "park_land": parkLandOptions[parkLandPicker.selectedRow(inComponent: 0)] as AnyObject]
+            let moreOptions: [String:Any] =
+                ["kid_friendly": kidFriendlySwitch.isOn ? 1 : 0,
+                 "height_restricted": heightRestrictedSwitch.isOn ? 1 : 0,
+                 "park": parkOptions[parkPicker.selectedRow(inComponent: 0)],
+                 "park_land": parkLandOptions[parkLandPicker.selectedRow(inComponent: 0)]]
             receiveDataDelegate.pass(moreOptions)
         }
     }

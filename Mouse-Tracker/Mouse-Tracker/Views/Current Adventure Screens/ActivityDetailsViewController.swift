@@ -1,5 +1,5 @@
 //
-//  ActivityViewController.swift
+//  ActivityDetailsViewController.swift
 //  Mouse-Tracker
 //
 //  Created by Jack Dangelmaier on 11/14/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityViewController: UIViewController {
+class ActivityDetailsViewController: UIViewController {
 
     @IBOutlet weak var ActivityName: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -22,6 +22,7 @@ class ActivityViewController: UIViewController {
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var heightValue: UILabel!
     
+    var activity: Activity!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,19 +9,19 @@
 import UIKit
 
 protocol canReceiveData {
-    func pass(_ data: [String: AnyObject])
+    func pass(_ data: [String: Any])
 }
 
 class NewAdventureViewController: UIViewController, canReceiveData {
     @IBOutlet weak var densitySlider: UISlider!
     @IBOutlet weak var intensitySlider: UISlider!
     
-    var sliders: [String: AnyObject] = [:]
+    var sliders: [String: Any] = [:]
     
     //TODO: calls model generate new adventure
     @IBAction func generateAdventureButtonPressed(_ sender: UIButton) {
-        sliders["density"] = Int(densitySlider.value * 100) as AnyObject
-        sliders["intensity"] = Int(intensitySlider.value * 100) as AnyObject
+        sliders["density"] = densitySlider.value * 100
+        sliders["intensity"] = intensitySlider.value * 100
         
         //TODO: use self.sliders as parameter to function
         print("sliders:", self.sliders)
@@ -32,7 +32,7 @@ class NewAdventureViewController: UIViewController, canReceiveData {
         super.viewDidLoad()
     }
     
-    func pass(_ data: [String: AnyObject]) {
+    func pass(_ data: [String: Any]) {
         for (key, value) in data {
             self.sliders[key] = value
         }

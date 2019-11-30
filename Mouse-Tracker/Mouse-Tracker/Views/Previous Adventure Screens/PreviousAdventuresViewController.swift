@@ -10,8 +10,9 @@ import UIKit
 
 class PreviousAdventuresViewController : UIViewController, UITableViewDataSource, UITableViewDelegate{
   
-
     @IBOutlet weak var PreviousAdvTable: UITableView!
+    
+    let tempActivityArray = [Adventure(start: Date(), activities: [Activity(title: "Hidden Mickey 1", description: "Find the first hidden Mickey in Disneyland! It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park.")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,6 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         self.viewDidLoad()
     }
     
-    let tempActivityArray = ["Find Hidden Mickey", "Roller Coaster 1", "Fun thing 3"]
-    
     //TODO: grab number of previous adventure and return here
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
           return tempActivityArray.count
@@ -38,8 +37,9 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         
         cell.AdventureName.text = "Adventure \(indexPath.row + 1)"
             //tempActivityArray[indexPath.row]
-        cell.ProgressStatus.text = tempActivityArray[indexPath.row]
-        cell.Details.text = tempActivityArray[indexPath.row]
+        //TODO: make these values real
+        /*cell.ProgressStatus.text = tempActivityArray[indexPath.row].progressPercent
+        cell.Details.text = tempActivityArray[indexPath.row].details*/
         
         
         
@@ -58,14 +58,11 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         self.performSegue(withIdentifier: "goToAdvDetails", sender: self)
     }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "goToAdvDetails" {
+            (segue.destination as! AdventureDetailsViewController).adventure = tempActivityArray[0]
+        }
     }
-    */
 
 }
