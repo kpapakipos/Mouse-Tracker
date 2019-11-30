@@ -20,14 +20,16 @@ class NewAdventureViewController: UIViewController, canReceiveData {
     
     //TODO: calls model generate new adventure
     @IBAction func generateAdventureButtonPressed(_ sender: UIButton) {
+        sliders["density"] = Int(densitySlider.value * 100) as AnyObject
+        sliders["intensity"] = Int(intensitySlider.value * 100) as AnyObject
+        
         //TODO: use self.sliders as parameter to function
+        print("sliders:", self.sliders)
+        self.performSegue(withIdentifier: "adventureGenerated", sender: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        sliders["density"] = Int(densitySlider.value * 100) as AnyObject
-        sliders["intensity"] = Int(intensitySlider.value * 100) as AnyObject
     }
     
     func pass(_ data: [String: AnyObject]) {

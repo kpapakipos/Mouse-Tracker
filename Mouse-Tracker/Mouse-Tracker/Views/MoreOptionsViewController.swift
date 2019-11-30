@@ -16,7 +16,7 @@ class MoreOptionsViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     var receiveDataDelegate: canReceiveData!
     let parkOptions = ["Any", "Disneyland", "Disney California Adventure"]
-    var parkLandOptions = ["Fantasyland", "Hollywood Land", "Tomorrowland", "Pacific Wharf", "Frontierland", "Mickey's Toon Town", "Critter Country", "Main Street, U.S.A.", "Paradise Gardens", "Grizzly Peak", "Hollywood Land", "New Orleans Square", "Pixar Pier", "Adventureland", "Cars Land", "Galaxy's Edge", "Buena Vista Street"].sorted()
+    var parkLandOptions = ["Fantasyland", "Hollywood Land", "Tomorrowland", "Pacific Wharf", "Frontierland", "Mickey's Toon Town", "Critter Country", "Main Street, U.S.A.", "Paradise Gardens", "Grizzly Peak", "New Orleans Square", "Pixar Pier", "Adventureland", "Cars Land", "Galaxy's Edge", "Buena Vista Street"].sorted()
     
     override func viewDidLoad() {
         super.viewDidLoad()
