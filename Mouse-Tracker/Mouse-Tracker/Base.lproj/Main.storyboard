@@ -471,10 +471,10 @@
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="-860.49107142857144"/>
         </scene>
-        <!--Activity View Controller-->
+        <!--Activity Details View Controller-->
         <scene sceneID="Q0A-Z2-WxQ">
             <objects>
-                <viewController id="qKw-Ux-g2T" customClass="ActivityViewController" customModule="Mouse_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qKw-Ux-g2T" customClass="ActivityDetailsViewController" customModule="Mouse_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fbi-dD-lHG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
