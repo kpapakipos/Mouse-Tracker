@@ -14,10 +14,12 @@ class MoreOptionsViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var parkPicker: UIPickerView!
     @IBOutlet weak var parkLandPicker: UIPickerView!
     
+    //TODO: maybe group parks and parkland into a groups that make sense like california parks
     var receiveDataDelegate: canReceiveData!
     let parkOptions = ["Any", "Disneyland", "Disney California Adventure"]
     var parkLandOptions = ["Fantasyland", "Hollywood Land", "Tomorrowland", "Pacific Wharf", "Frontierland", "Mickey's Toon Town", "Critter Country", "Main Street, U.S.A.", "Paradise Gardens", "Grizzly Peak", "New Orleans Square", "Pixar Pier", "Adventureland", "Cars Land", "Galaxy's Edge", "Buena Vista Street"].sorted()
     
+    //TODO: repopulate this screen with previous options
     override func viewDidLoad() {
         super.viewDidLoad()
         

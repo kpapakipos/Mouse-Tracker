@@ -23,8 +23,12 @@ class NewAdventureViewController: UIViewController, canReceiveData {
         sliders["density"] = densitySlider.value * 100
         sliders["intensity"] = intensitySlider.value * 100
         
+        
         //TODO: use self.sliders as parameter to function
         print("sliders:", self.sliders)
+        
+        
+        //createNew(userID: useridnumber, options:)
         self.performSegue(withIdentifier: "adventureGenerated", sender: nil)
     }
     
