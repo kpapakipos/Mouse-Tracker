@@ -32,16 +32,16 @@ class AdventureDetailsViewController: UIViewController {
     
     var adventure: Adventure!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.AdventureName.text = adventure.title
         self.parksValue.text = adventure.options["park"] as? String
         self.parkLandValues.text = adventure.options["park_land"] as? String
-        self.densityValue.text = adventure.options["density"] as? String
-        self.intensityValue.text = adventure.options["intensity"] as? String
-        
+        self.densityValue.text = String(adventure.options["density"] as! Int)
+        self.intensityValue.text = String(adventure.options["intensity"] as! Int)
+        self.kidFriendlyValue.text = adventure.options["kid_friendly"] as! Int == 1 ? "True" : "False"
+        self.heightRestrictedValue.text = adventure.options["height_restricted"] as! Int == 1 ? "True" : "False"
     }
     
 

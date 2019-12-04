@@ -12,11 +12,13 @@ class Activity: NSObject {
     var title: String
     var descrip: String
     var trivia: String
+    var completed: Bool
     
-    init(title: String, description: String, trivia: String) {
+    init(title: String, description: String, trivia: String, completed: Bool = false) {
         self.title = title
         self.descrip = description
         self.trivia = trivia
+        self.completed = completed
         super.init()
     }
 }

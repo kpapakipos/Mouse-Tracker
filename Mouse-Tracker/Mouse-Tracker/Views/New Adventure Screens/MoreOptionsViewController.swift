@@ -18,18 +18,24 @@ class MoreOptionsViewController: UIViewController, UIPickerViewDelegate, UIPicke
     var receiveDataDelegate: canReceiveData!
     let parkOptions = ["Any", "Disneyland", "Disney California Adventure"]
     var parkLandOptions = ["Fantasyland", "Hollywood Land", "Tomorrowland", "Pacific Wharf", "Frontierland", "Mickey's Toon Town", "Critter Country", "Main Street, U.S.A.", "Paradise Gardens", "Grizzly Peak", "New Orleans Square", "Pixar Pier", "Adventureland", "Cars Land", "Galaxy's Edge", "Buena Vista Street"].sorted()
+    var slidersForPersistence: [String: Any]!
     
     //TODO: repopulate this screen with previous options
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //if you put Any in the initial declaration (before sorting), it isn't the first element. I insert it later to ensure it's the first element in the list
+        //if you put Any in the initial declaration (top of this class), it isn't the first element. I insert Any here to ensure it's the first element in the list
         parkLandOptions.insert("Any", at: 0)
         
         self.parkPicker.delegate = self
         self.parkPicker.dataSource = self
         self.parkLandPicker.delegate = self
         self.parkLandPicker.dataSource = self
+        self.kidFriendlySwitch.setOn(self.slidersForPersistence?["kid_friendly"] as? Int == 1 ? true : false, animated: false)
+        self.heightRestrictedSwitch.setOn(self.slidersForPersistence?["height_restricted"] as? Int == 1 ? true : false, animated: false)
+        let indexForPark = parkOptions.firstIndex(of: self.slidersForPersistence?["park"] as! String)!
+        self.parkPicker.selectRow(indexForPark, inComponent: 0, animated: false)
+        let indexForParkLand = parkLandOptions.firstIndex(of: self.slidersForPersistence?["park_land"] as! String)!
+        self.parkLandPicker.selectRow(indexForParkLand, inComponent: 0, animated: false)
     }
     
     override func viewWillDisappear(_ animated: Bool) {

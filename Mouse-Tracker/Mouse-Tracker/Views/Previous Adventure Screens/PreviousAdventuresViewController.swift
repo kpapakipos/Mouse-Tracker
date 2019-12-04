@@ -12,7 +12,7 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
   
     @IBOutlet weak var PreviousAdvTable: UITableView!
     
-    let tempActivityArray = [Adventure(start: Date(), activities: [Activity(title: "Hidden Mickey 1", description: "Find the first hidden Mickey in Disneyland! It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park.")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
+    let adventures = [Adventure(start: Date(), activities: [Activity(title: "Hidden Mickey 1", description: "Find the first hidden Mickey in Disneyland! It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park.")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
     
     //TODO: grab number of previous adventure and return here
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-          return tempActivityArray.count
+          return adventures.count
       }
       
     //TODO: grab information for these adventures and place information here
@@ -50,18 +50,21 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
     //TODO: Update to navigation controller
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.performSegue(withIdentifier: "goToAdventure", sender: self)
+        self.performSegue(withIdentifier: "goToAdventure", sender: adventures[indexPath.row])
     }
       
     
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToAdvDetails", sender: self)
+        self.performSegue(withIdentifier: "goToAdvDetails", sender: adventures[indexPath.row])
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToAdvDetails" {
-            (segue.destination as! AdventureDetailsViewController).adventure = tempActivityArray[0]
+            (segue.destination as! AdventureDetailsViewController).adventure = sender as? Adventure
+        }
+        else if segue.identifier == "goToAdventure" {
+            (segue.destination as! CurrentAdvViewController).adventure = sender as? Adventure
         }
     }
 

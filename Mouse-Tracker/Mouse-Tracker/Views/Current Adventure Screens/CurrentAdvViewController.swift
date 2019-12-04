@@ -14,6 +14,8 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBOutlet weak var percentComplete: UILabel!
     
+    var adventure: Adventure!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         CurrentAdvTableView.delegate = self
@@ -21,25 +23,22 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view.
     }
     
-    let tempActivityArray = ["Find Hidden Mickey", "Roller Coaster 1", "Fun thing 3"]
-    
     //displays number of rows
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: calls model to return number of activities there are
-        return tempActivityArray.count
+        return self.adventure.activities.count
     }
     
-    //displays content on the list
+    //displays content on the table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CurrentAdvCell", for: indexPath) as! ActivityTableViewCell
         
         //TODO: should put the names of the activities from the database in here
-        cell.ActivityNameLabel?.text = tempActivityArray[indexPath.row] //puts data from array into cell
-        
+        cell.ActivityNameLabel?.text = self.adventure.activities[indexPath.row].title //puts data from array into cell
         
         //TODO: adds image should be based on if the activity is checked off
-        cell.MickeyCheckBox?.image = UIImage(named: "MickeyFace")
+        cell.MickeyCheckBox?.image = self.adventure.activities[indexPath.row].completed ? UIImage(named: "Mickey") : UIImage(named: "MickeyFace")
         
         return cell
     }
@@ -51,24 +50,16 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         //TODO: Update database
         //TODO: Update %
         let cell = tableView.cellForRow(at: indexPath) as! ActivityTableViewCell
-        if(cell.MickeyCheckBox.image == UIImage(named: "MickeyFace")){
-             cell.MickeyCheckBox.image = UIImage(named: "Mickey")
-        }
-        else {
-            cell.MickeyCheckBox.image = UIImage(named: "MickeyFace")
-        }
-        
+        cell.MickeyCheckBox.image = cell.MickeyCheckBox.image == UIImage(named: "MickeyFace") ? UIImage(named: "Mickey") : UIImage(named: "MickeyFace")
+        self.adventure.activities[indexPath.row].completed = !self.adventure.activities[indexPath.row].completed
         
         //This is an animation option that makes the click look nicer. Flashes instead of stays grey
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        
-        
     }
     
     //Will go to the Activity details page if the details button is clicked
     func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
-         self.performSegue(withIdentifier: "goToActivityDetails", sender: self)
+        self.performSegue(withIdentifier: "goToActivityDetails", sender: adventure.activities[indexPath.row])
     }
     
     
@@ -81,14 +72,11 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "goToActivityDetails" {
+            (segue.destination as! ActivityDetailsViewController).activity = sender as? Activity
+        }
     }
-    */
 
 }

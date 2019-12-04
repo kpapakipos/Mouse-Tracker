@@ -23,17 +23,22 @@ class NewAdventureViewController: UIViewController, canReceiveData {
         sliders["density"] = densitySlider.value * 100
         sliders["intensity"] = intensitySlider.value * 100
         
-        
         //TODO: use self.sliders as parameter to function
         print("sliders:", self.sliders)
         
         
         //createNew(userID: useridnumber, options:)
-        self.performSegue(withIdentifier: "adventureGenerated", sender: nil)
+        //this demo adventure should be replaced with a real model call
+        self.performSegue(withIdentifier: "adventureGenerated", sender: Adventure(start: Date(), completed: nil, activities: [], title: "Testerino Adventurino", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"]))
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //set default values for some adventure options
+        sliders["kid_friendly"] = 0
+        sliders["height_restricted"] = 0
+        sliders["park"] = "Any"
+        sliders["park_land"] = "Any"
     }
     
     func pass(_ data: [String: Any]) {
@@ -46,6 +51,10 @@ class NewAdventureViewController: UIViewController, canReceiveData {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moreOptionsSegue" {
             (segue.destination as! MoreOptionsViewController).receiveDataDelegate = self
+            (segue.destination as! MoreOptionsViewController).slidersForPersistence = self.sliders
+        }
+        else if segue.identifier == "adventureGenerated" {
+            (segue.destination as! CurrentAdvViewController).adventure = sender as? Adventure
         }
     }
 }
