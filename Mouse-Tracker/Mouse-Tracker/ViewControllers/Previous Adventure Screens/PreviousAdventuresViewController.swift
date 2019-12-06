@@ -8,11 +8,15 @@
 
 import UIKit
 
-class PreviousAdventuresViewController : UIViewController, UITableViewDataSource, UITableViewDelegate{
+protocol canAppendNewAdventure {
+    func append(_ data: Adventure)
+}
+
+class PreviousAdventuresViewController : UIViewController, UITableViewDataSource, UITableViewDelegate, canAppendNewAdventure {
   
     @IBOutlet weak var PreviousAdvTable: UITableView!
     
-    let adventures = [Adventure(start: Date(), activities: [Activity(title: "Hidden Mickey 1", description: "Find the first hidden Mickey in Disneyland! It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park.")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
+    var adventures = [Adventure(start: Date(), activities: [Activity(title: "Hidden Mickey 1", description: "Find the first hidden Mickey in Disneyland! It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park.")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +71,10 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         self.performSegue(withIdentifier: "goToAdvDetails", sender: adventures[indexPath.row])
     }
     
+    func append(_ data: Adventure) {
+        self.adventures.append(data)
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToAdvDetails" {
@@ -74,6 +82,9 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         }
         else if segue.identifier == "goToAdventure" {
             (segue.destination as! CurrentAdvViewController).adventure = sender as? Adventure
+        }
+        else if segue.identifier == "goToNewAdventure" {
+            (segue.destination as! NewAdventureViewController).appendAdventureDelegate = self
         }
     }
 

@@ -214,7 +214,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Create New Adventure"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="evv-Az-Bcl"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToNewAdventure" id="evv-Az-Bcl"/>
                                 </connections>
                             </button>
                         </subviews>

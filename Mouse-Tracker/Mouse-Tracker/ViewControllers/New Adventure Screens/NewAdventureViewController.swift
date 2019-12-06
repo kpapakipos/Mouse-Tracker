@@ -16,6 +16,8 @@ class NewAdventureViewController: UIViewController, canReceiveData {
     @IBOutlet weak var densitySlider: UISlider!
     @IBOutlet weak var intensitySlider: UISlider!
     
+    var appendAdventureDelegate: canAppendNewAdventure!
+    
     var sliders: [String: Any] = [:]
     
     //TODO: calls model generate new adventure
@@ -29,7 +31,10 @@ class NewAdventureViewController: UIViewController, canReceiveData {
         
         //createNew(userID: useridnumber, options:)
         //this demo adventure should be replaced with a real model call
-        self.performSegue(withIdentifier: "adventureGenerated", sender: Adventure(start: Date(), completed: nil, activities: [], title: "Testerino Adventurino", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"]))
+        let newAdv = Adventure(start: Date(), completed: nil, activities: [], title: "Testerino Adventurino", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])
+        self.appendAdventureDelegate.append(newAdv)
+        
+        self.performSegue(withIdentifier: "adventureGenerated", sender: newAdv)
     }
     
     override func viewDidLoad() {
