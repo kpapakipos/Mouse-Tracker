@@ -30,6 +30,8 @@ class AdventureDetailsViewController: UIViewController {
     @IBOutlet weak var heightRestrictedLabel: UILabel!
     @IBOutlet weak var heightRestrictedValue: UILabel!
     
+    @IBOutlet weak var advPagePicture: UIImageView!
+    
     var adventure: Adventure!
     
     override func viewDidLoad() {
@@ -44,7 +46,7 @@ class AdventureDetailsViewController: UIViewController {
         self.kidFriendlyValue.text = adventure.options["kid_friendly"] as! Int == 1 ? "True" : "False"
         self.heightRestrictedValue.text = adventure.options["height_restricted"] as! Int == 1 ? "True" : "False"
     
-        
+        self.advPagePicture.image = UIImage(named: "DisneyCastle")
     }
     
 

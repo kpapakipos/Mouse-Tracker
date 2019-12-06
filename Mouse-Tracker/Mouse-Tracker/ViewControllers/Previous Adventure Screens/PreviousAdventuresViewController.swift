@@ -16,7 +16,7 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
   
     @IBOutlet weak var PreviousAdvTable: UITableView!
     
-    var adventures = [Adventure(start: Date(), activities: [Activity(title: "Hidden Mickey 1", description: "Find the first hidden Mickey in Disneyland! It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park.")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
+    var adventures = [Adventure(start: Date(), activities: [Activity(title: "Find a Hidden Mickey", description: "It's very near the entrance.", trivia: "This Mickey is the oldest one at any Disney park."), Activity(title: "Haunted Mansion", description: "Experence the thrills of this Haunted Mansion", trivia: "This ride has been updated numerous times")], title: "Demo Adventure", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,13 +46,13 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
         /*cell.ProgressStatus.text = tempActivityArray[indexPath.row].progressPercent */
         
         var progress = 0
-        var count = 0
+        var count = 0.0
         for activity in adv.activities {
             if activity.completed{
                 count += 1
             }
         }
-        progress = adv.activities.count != 0 ? count / adv.activities.count * 100 : 100
+        progress = Int(double_t(adv.activities.count != 0 ? (count / double_t(adv.activities.count) * 100) : 100))
         cell.ProgressStatus.text = String(progress) + "%"
         
         

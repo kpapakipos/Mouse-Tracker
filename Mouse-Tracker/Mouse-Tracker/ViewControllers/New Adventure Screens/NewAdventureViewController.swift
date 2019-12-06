@@ -31,7 +31,9 @@ class NewAdventureViewController: UIViewController, canReceiveData {
         
         //createNew(userID: useridnumber, options:)
         //this demo adventure should be replaced with a real model call
-        let newAdv = Adventure(start: Date(), completed: nil, activities: [], title: "Testerino Adventurino", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])
+        let activities = [Activity(title: "Space Mountain", description: "Intense Dark inside Roller Coaster", trivia: "Consider one of the most fun rides at Disney"), Activity(title: "Pin Trading", description: "Trade a pin with one of the characters", trivia: "Special events have limited edition pins"), Activity(title: "Its a Small World", description: "Great ride for all ages", trivia: "2014 Cinderella was added to the ride")]
+        
+        let newAdv = Adventure(start: Date(), completed: nil, activities: activities, title: "Testerino Adventurino", options: ["density": 35, "intensity": 73, "kid_friendly": 1, "height_restricted": 0, "park": "Disneyland", "park_land": "Adventureland"])
         self.appendAdventureDelegate.append(newAdv)
         
         self.performSegue(withIdentifier: "adventureGenerated", sender: newAdv)
