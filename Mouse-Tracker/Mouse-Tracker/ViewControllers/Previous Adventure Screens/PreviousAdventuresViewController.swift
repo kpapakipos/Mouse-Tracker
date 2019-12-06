@@ -27,7 +27,7 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
     
     //this automatically reloads the page anytime it is viewed which is needed after a new adventure is created and the user goes back to this page
     override func viewWillAppear(_ animated: Bool) {
-        self.viewDidLoad()
+        self.PreviousAdvTable.reloadData()
     }
     
     //TODO: grab number of previous adventure and return here
@@ -52,7 +52,7 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
                 count += 1
             }
         }
-        progress = count / adv.activities.count
+        progress = adv.activities.count != 0 ? count / adv.activities.count * 100 : 100
         cell.ProgressStatus.text = String(progress) + "%"
         
         
@@ -73,6 +73,7 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
     
     func append(_ data: Adventure) {
         self.adventures.append(data)
+        self.PreviousAdvTable.reloadData()
     }
     
     // MARK: - Navigation
