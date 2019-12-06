@@ -38,7 +38,7 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.ActivityNameLabel?.text = self.adventure.activities[indexPath.row].title //puts data from array into cell
         
         //TODO: adds image should be based on if the activity is checked off
-        cell.MickeyCheckBox?.image = self.adventure.activities[indexPath.row].completed ? UIImage(named: "Mickey") : UIImage(named: "MickeyFace")
+        cell.MickeyCheckBox?.image = self.adventure.activities[indexPath.row].completed ? UIImage(named: "MickeyFilled") : UIImage(named: "MickeyCheck")
         
         return cell
     }
@@ -50,7 +50,7 @@ class CurrentAdvViewController: UIViewController, UITableViewDelegate, UITableVi
         //TODO: Update database
         //TODO: Update %
         let cell = tableView.cellForRow(at: indexPath) as! ActivityTableViewCell
-        cell.MickeyCheckBox.image = cell.MickeyCheckBox.image == UIImage(named: "MickeyFace") ? UIImage(named: "Mickey") : UIImage(named: "MickeyFace")
+        cell.MickeyCheckBox.image = cell.MickeyCheckBox.image == UIImage(named: "MickeyCheck") ? UIImage(named: "MickeyFilled") : UIImage(named: "MickeyCheck")
         self.adventure.activities[indexPath.row].completed = !self.adventure.activities[indexPath.row].completed
         
         //This is an animation option that makes the click look nicer. Flashes instead of stays grey

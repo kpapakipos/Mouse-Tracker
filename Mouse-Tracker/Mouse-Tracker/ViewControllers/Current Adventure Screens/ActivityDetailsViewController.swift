@@ -11,16 +11,9 @@ import UIKit
 class ActivityDetailsViewController: UIViewController {
 
     @IBOutlet weak var ActivityName: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var locationValue: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var timeValue: UILabel!
-    @IBOutlet weak var kidFriendlyLabel: UILabel!
-    @IBOutlet weak var kidFriendlyValue: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var typeValue: UILabel!
-    @IBOutlet weak var heightLabel: UILabel!
-    @IBOutlet weak var heightValue: UILabel!
+    @IBOutlet weak var descriptionValue: UILabel!
+    @IBOutlet weak var triviaValue: UILabel!
+    @IBOutlet weak var completedValue: UILabel!
     
     var activity: Activity!
     
@@ -29,8 +22,11 @@ class ActivityDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //TODO: Input all data from the database
-        ActivityName.text = "Activity One"
-        ActivityName.font = UIFont.boldSystemFont(ofSize: 50.0)
+        ActivityName.text = activity.title
+        ActivityName.font = UIFont.boldSystemFont(ofSize: 40.0)
+        descriptionValue.text = activity.descrip
+        triviaValue.text = activity.trivia
+        completedValue.text = activity.completed ? "Yes" : "No"
     }
     
 
