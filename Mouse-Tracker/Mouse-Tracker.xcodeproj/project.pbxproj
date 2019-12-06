@@ -137,7 +137,7 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		0B336DCB237F716F0038B35E /* Views */ = {
+		0B336DCB237F716F0038B35E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0B0C12A82393174500DDE806 /* Previous Adventure Screens */,
@@ -145,7 +145,7 @@
 				0B0C12A62393164A00DDE806 /* New Adventure Screens */,
 				0B0C12A52393162B00DDE806 /* TableViewCells */,
 			);
-			path = Views;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		0B579C9B23721E8C000F9FED = {
@@ -171,7 +171,7 @@
 		0B579CA623721E8C000F9FED /* Mouse-Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				0B336DCB237F716F0038B35E /* Views */,
+				0B336DCB237F716F0038B35E /* ViewControllers */,
 				0B579CA723721E8C000F9FED /* AppDelegate.swift */,
 				0B579CA923721E8C000F9FED /* SceneDelegate.swift */,
 				0B579CAD23721E8C000F9FED /* Main.storyboard */,
