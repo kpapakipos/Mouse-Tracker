@@ -36,12 +36,15 @@ class AdventureDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         self.AdventureName.text = adventure.title
+        self.AdventureName.font = UIFont.boldSystemFont(ofSize: 40.0)
         self.parksValue.text = adventure.options["park"] as? String
         self.parkLandValues.text = adventure.options["park_land"] as? String
         self.densityValue.text = String(adventure.options["density"] as! Int)
         self.intensityValue.text = String(adventure.options["intensity"] as! Int)
         self.kidFriendlyValue.text = adventure.options["kid_friendly"] as! Int == 1 ? "True" : "False"
         self.heightRestrictedValue.text = adventure.options["height_restricted"] as! Int == 1 ? "True" : "False"
+    
+        
     }
     
 

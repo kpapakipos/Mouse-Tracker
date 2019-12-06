@@ -35,12 +35,21 @@ class PreviousAdventuresViewController : UIViewController, UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PreviousAdvCell", for: indexPath) as! AdventureTableViewCell
         
-        cell.AdventureName.text = "Adventure \(indexPath.row + 1)"
-            //tempActivityArray[indexPath.row]
+        let adv = adventures[indexPath.row]
+        cell.AdventureName.text = adv.title
+        //tempActivityArray[indexPath.row]
         //TODO: make these values real
-        /*cell.ProgressStatus.text = tempActivityArray[indexPath.row].progressPercent
-        cell.Details.text = tempActivityArray[indexPath.row].details*/
+        /*cell.ProgressStatus.text = tempActivityArray[indexPath.row].progressPercent */
         
+        var progress = 0
+        var count = 0
+        for activity in adv.activities {
+            if activity.completed{
+                count += 1
+            }
+        }
+        progress = count / adv.activities.count
+        cell.ProgressStatus.text = String(progress) + "%"
         
         
         return cell

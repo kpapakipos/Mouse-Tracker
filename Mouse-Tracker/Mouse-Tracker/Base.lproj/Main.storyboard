@@ -175,10 +175,10 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="PreviousAdvCell" id="ktm-UT-iIj" customClass="AdventureTableViewCell" customModule="Mouse_Tracker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="102.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="76.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ktm-UT-iIj" id="UZL-cP-Onr">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="102.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Adventure Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJx-DK-p65">
@@ -188,13 +188,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Progress %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-fQ-oO1">
-                                                    <rect key="frame" x="20" y="40" width="87" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Details (sliders etc)..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mx-XT-5LP">
-                                                    <rect key="frame" x="20" y="69" width="162" height="21"/>
+                                                    <rect key="frame" x="20" y="44" width="87" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -204,15 +198,12 @@
                                                 <constraint firstItem="mJx-DK-p65" firstAttribute="top" secondItem="UZL-cP-Onr" secondAttribute="topMargin" id="22r-9T-ufg"/>
                                                 <constraint firstItem="mJx-DK-p65" firstAttribute="leading" secondItem="UZL-cP-Onr" secondAttribute="leadingMargin" id="DbG-7V-eTe"/>
                                                 <constraint firstItem="rgf-fQ-oO1" firstAttribute="leading" secondItem="mJx-DK-p65" secondAttribute="leading" id="FeX-RF-xhD"/>
-                                                <constraint firstItem="3Mx-XT-5LP" firstAttribute="top" secondItem="rgf-fQ-oO1" secondAttribute="bottom" constant="8" id="Hz7-nM-0a3"/>
                                                 <constraint firstItem="rgf-fQ-oO1" firstAttribute="top" secondItem="mJx-DK-p65" secondAttribute="bottom" constant="8" id="dhG-kr-tVM"/>
-                                                <constraint firstItem="3Mx-XT-5LP" firstAttribute="leading" secondItem="rgf-fQ-oO1" secondAttribute="leading" id="r2B-YV-Vw9"/>
-                                                <constraint firstAttribute="bottom" secondItem="3Mx-XT-5LP" secondAttribute="bottom" constant="12" id="vHw-mh-Zlq"/>
+                                                <constraint firstAttribute="bottom" secondItem="rgf-fQ-oO1" secondAttribute="bottom" constant="15" id="plb-Se-AHr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="AdventureName" destination="mJx-DK-p65" id="Vhv-OV-066"/>
-                                            <outlet property="Details" destination="3Mx-XT-5LP" id="w38-Ah-Thj"/>
                                             <outlet property="ProgressStatus" destination="rgf-fQ-oO1" id="Zn4-tR-0Xq"/>
                                         </connections>
                                     </tableViewCell>
